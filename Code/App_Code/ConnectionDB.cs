@@ -10,7 +10,7 @@ using Microsoft.ApplicationBlocks.Data;
 public class ConnectionDB
 {
 
-    public String SQLConnection = ConfigurationManager.ConnectionStrings["SQLConnections"].ToString();
+    public String SQLConnection = ConfigurationManager.ConnectionStrings["SQLConnection"].ToString();
     SqlConnection Conn;
     public ConnectionDB()
     {
