@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>INSPINIA | Dashboard</title>
+    <title> Quản Trị</title>
 
     <link href="css\bootstrap.min.css" rel="stylesheet">
     <link href="font-awesome\css\font-awesome.css" rel="stylesheet">
@@ -22,375 +22,177 @@
     <link href="css\animate.css" rel="stylesheet">
     <link href="css\style.css" rel="stylesheet">
 
-<style type="text/css">.jqstooltip { position: absolute;left: 0px;top: 0px;visibility: hidden;background: rgb(0, 0, 0) transparent;background-color: rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";color: white;font: 10px arial, san serif;text-align: left;white-space: nowrap;padding: 5px;border: 1px solid white;z-index: 10000;}.jqsfield { color: white;font: 10px arial, san serif;text-align: left;}</style></head>
+    <style type="text/css">
+        .jqstooltip { 
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            visibility: hidden;
+            background: rgb(0, 0, 0) transparent;
+            background-color: rgba(0,0,0,0.6);
+            filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+            -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+            color: white;
+            font: 10px arial, san serif;
+            text-align: left;
+            white-space: nowrap;
+            padding: 5px;
+            border: 1px solid white;
+            z-index: 10000;
+        }
+        .jqsfield { 
+            color: white;
+            font: 10px arial, san serif;
+            text-align: left;
+        }
+    </style>
+</head>
 <body class="pace-done">
-    <div class="pace  pace-inactive"><div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
-  <div class="pace-progress-inner"></div>
-</div>
-<div class="pace-activity"></div></div>
+    <%-- -------------------------------------------------- --%>
+    <div class="pace  pace-inactive">
+        <div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
+            <div class="pace-progress-inner"></div>
+        </div>
+        <div class="pace-activity"></div>
+    </div>
+    <%-- ----------------------------------------------- --%>
     <div id="wrapper">
         <nav class="navbar-default navbar-static-side" role="navigation">
             <div class="sidebar-collapse">
                 <ul class="nav metismenu" id="side-menu">
                     <li class="nav-header">
-                        <div class="dropdown profile-element"> <span>
-                            <img alt="image" class="img-circle" src="img\profile_small.jpg">
+                        <div class="dropdown profile-element"> 
+                            <span>
+                                <img alt="image" class="img-circle"style="width: 70px;height:70px" src="img\a6.jpg">
                              </span>
                             <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                            <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">David Williams</strong>
-                             </span> <span class="text-muted text-xs block">Art Director <b class="caret"></b></span> </span> </a>
+                                <span class="clear"> 
+                                    <span class="block m-t-xs"> 
+                                        <strong class="font-bold">Thư Quê Hương</strong>
+                                     </span> 
+                                     <span class="text-muted text-xs block">Admin
+                                          <b class="caret"></b>
+                                     </span> 
+                                </span> 
+                            </a>
                             <ul class="dropdown-menu animated fadeInRight m-t-xs">
-                                <li><a href="profile.htm">Profile</a></li>
-                                <li><a href="contacts.htm">Contacts</a></li>
-                                <li><a href="mailbox.htm">Mailbox</a></li>
+                                <li><a href="#">Thông Tin</a></li>
+                                <li><a href="#">Liên Hệ</a></li>
                                 <li class="divider"></li>
-                                <li><a href="login.htm">Logout</a></li>
+                                <li><a href="DangNhap.aspx">Đăng Xuất</a></li>
                             </ul>
                         </div>
                         <div class="logo-element">
-                            IN+
+                            QT
                         </div>
                     </li>
-                    <li class="active">
-                        <a href="index-1.htm"><i class="fa fa-th-large"></i> <span class="nav-label">Dashboards</span> <span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level collapse in">
-                            <li class="active"><a href="index-1.htm">Dashboard v.1</a></li>
-                            <li><a href="dashboard_2.htm">Dashboard v.2</a></li>
-                            <li><a href="dashboard_3.htm">Dashboard v.3</a></li>
-                            <li><a href="dashboard_4_1.htm">Dashboard v.4</a></li>
-                            <li><a href="dashboard_5.htm">Dashboard v.5 </a></li>
-                        </ul>
+                    <li>
+                        <a href="QTNhomBatDongSan.aspx"><i class="fa fa-th"></i> <span class="nav-label"> Nhóm Bất Động Sản</span></a>
                     </li>
                     <li>
-                        <a href="layouts.htm"><i class="fa fa-diamond"></i> <span class="nav-label">Layouts</span></a>
+                        <a href="QTBatDongSan.aspx"><i class="fa fa-edit"></i> <span class="nav-label">Bất Động Sản</span></a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">Graphs</span><span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level collapse">
-                            <li><a href="graph_flot.htm">Flot Charts</a></li>
-                            <li><a href="graph_morris.htm">Morris.js Charts</a></li>
-                            <li><a href="graph_rickshaw.htm">Rickshaw Charts</a></li>
-                            <li><a href="graph_chartjs.htm">Chart.js</a></li>
-                            <li><a href="graph_chartist.htm">Chartist</a></li>
-                            <li><a href="c3.htm">c3 charts</a></li>
-                            <li><a href="graph_peity.htm">Peity Charts</a></li>
-                            <li><a href="graph_sparkline.htm">Sparkline Charts</a></li>
-                        </ul>
+                        <a href="QTHinhBatDongSan.aspx"><i class="fa fa-picture-o"></i> <span class="nav-label">Hình Bất Động Sản</span></a>
                     </li>
                     <li>
-                        <a href="mailbox.htm"><i class="fa fa-envelope"></i> <span class="nav-label">Mailbox </span><span class="label label-warning pull-right">16/24</span></a>
-                        <ul class="nav nav-second-level collapse">
-                            <li><a href="mailbox.htm">Inbox</a></li>
-                            <li><a href="mail_detail.htm">Email view</a></li>
-                            <li><a href="mail_compose.htm">Compose email</a></li>
-                            <li><a href="email_template.htm">Email templates</a></li>
-                        </ul>
+                        <a href="QTMenu.aspx"><i class="fa fa-edit"></i> <span class="nav-label">Menu</span></a>
+                    </li>
+                     <li>
+                        <a href="QTSlideShow.aspx"><i class="fa fa-edit"></i> <span class="nav-label">Slide Show</span></a>
                     </li>
                     <li>
-                        <a href="metrics.htm"><i class="fa fa-pie-chart"></i> <span class="nav-label">Metrics</span>  </a>
-                    </li>
-                    <li>
-                        <a href="widgets.htm"><i class="fa fa-flask"></i> <span class="nav-label">Widgets</span></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-edit"></i> <span class="nav-label">Forms</span><span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level collapse">
-                            <li><a href="form_basic.htm">Basic form</a></li>
-                            <li><a href="form_advanced.htm">Advanced Plugins</a></li>
-                            <li><a href="form_wizard.htm">Wizard</a></li>
-                            <li><a href="form_file_upload.htm">File Upload</a></li>
-                            <li><a href="form_editors.htm">Text Editor</a></li>
-                            <li><a href="form_autocomplete.htm">Autocomplete</a></li>
-                            <li><a href="form_markdown.htm">Markdown</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-desktop"></i> <span class="nav-label">App Views</span>  <span class="pull-right label label-primary">SPECIAL</span></a>
-                        <ul class="nav nav-second-level collapse">
-                            <li><a href="contacts.htm">Contacts</a></li>
-                            <li><a href="profile.htm">Profile</a></li>
-                            <li><a href="profile_2.htm">Profile v.2</a></li>
-                            <li><a href="contacts_2.htm">Contacts v.2</a></li>
-                            <li><a href="projects.htm">Projects</a></li>
-                            <li><a href="project_detail.htm">Project detail</a></li>
-                            <li><a href="activity_stream.htm">Activity stream</a></li>
-                            <li><a href="teams_board.htm">Teams board</a></li>
-                            <li><a href="social_feed.htm">Social feed</a></li>
-                            <li><a href="clients.htm">Clients</a></li>
-                            <li><a href="full_height.htm">Outlook view</a></li>
-                            <li><a href="vote_list.htm">Vote list</a></li>
-                            <li><a href="file_manager.htm">File manager</a></li>
-                            <li><a href="calendar.htm">Calendar</a></li>
-                            <li><a href="issue_tracker.htm">Issue tracker</a></li>
-                            <li><a href="blog.htm">Blog</a></li>
-                            <li><a href="article.htm">Article</a></li>
-                            <li><a href="faq.htm">FAQ</a></li>
-                            <li><a href="timeline.htm">Timeline</a></li>
-                            <li><a href="pin_board.htm">Pin board</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-files-o"></i> <span class="nav-label">Other Pages</span><span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level collapse">
-                            <li><a href="search_results.htm">Search results</a></li>
-                            <li><a href="lockscreen.htm">Lockscreen</a></li>
-                            <li><a href="invoice.htm">Invoice</a></li>
-                            <li><a href="login.htm">Login</a></li>
-                            <li><a href="login_two_columns.htm">Login v.2</a></li>
-                            <li><a href="forgot_password.htm">Forget password</a></li>
-                            <li><a href="register.htm">Register</a></li>
-                            <li><a href="404.htm">404 Page</a></li>
-                            <li><a href="500.htm">500 Page</a></li>
-                            <li><a href="empty_page.htm">Empty page</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-globe"></i> <span class="nav-label">Miscellaneous</span><span class="label label-info pull-right">NEW</span></a>
-                        <ul class="nav nav-second-level collapse">
-                            <li><a href="toastr_notifications.htm">Notification</a></li>
-                            <li><a href="nestable_list.htm">Nestable list</a></li>
-                            <li><a href="agile_board.htm">Agile board</a></li>
-                            <li><a href="timeline_2.htm">Timeline v.2</a></li>
-                            <li><a href="diff.htm">Diff</a></li>
-                            <li><a href="pdf_viewer.htm">PDF viewer</a></li>
-                            <li><a href="i18support.htm">i18 support</a></li>
-                            <li><a href="sweetalert.htm">Sweet alert</a></li>
-                            <li><a href="idle_timer.htm">Idle timer</a></li>
-                            <li><a href="truncate.htm">Truncate</a></li>
-                            <li><a href="password_meter.htm">Password meter</a></li>
-                            <li><a href="spinners.htm">Spinners</a></li>
-                            <li><a href="spinners_usage.htm">Spinners usage</a></li>
-                            <li><a href="tinycon.htm">Live favicon</a></li>
-                            <li><a href="google_maps.htm">Google maps</a></li>
-                            <li><a href="datamaps.htm">Datamaps</a></li>
-                            <li><a href="social_buttons.htm">Social buttons</a></li>
-                            <li><a href="code_editor.htm">Code editor</a></li>
-                            <li><a href="modal_window.htm">Modal window</a></li>
-                            <li><a href="clipboard.htm">Clipboard</a></li>
-                            <li><a href="text_spinners.htm">Text spinners</a></li>
-                            <li><a href="forum_main.htm">Forum view</a></li>
-                            <li><a href="validation.htm">Validation</a></li>
-                            <li><a href="tree_view.htm">Tree view</a></li>
-                            <li><a href="loading_buttons.htm">Loading buttons</a></li>
-                            <li><a href="chat_view.htm">Chat view</a></li>
-                            <li><a href="masonry.htm">Masonry</a></li>
-                            <li><a href="tour.htm">Tour</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-flask"></i> <span class="nav-label">UI Elements</span><span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level collapse">
-                            <li><a href="typography.htm">Typography</a></li>
-                            <li><a href="icons.htm">Icons</a></li>
-                            <li><a href="draggable_panels.htm">Draggable Panels</a></li> <li><a href="resizeable_panels.htm">Resizeable Panels</a></li>
-                            <li><a href="buttons.htm">Buttons</a></li>
-                            <li><a href="video.htm">Video</a></li>
-                            <li><a href="tabs_panels.htm">Panels</a></li>
-                            <li><a href="tabs.htm">Tabs</a></li>
-                            <li><a href="notifications.htm">Notifications &amp; Tooltips</a></li>
-                            <li><a href="helper_classes.htm">Helper css classes</a></li>
-                            <li><a href="badges_labels.htm">Badges, Labels, Progress</a></li>
-                        </ul>
-                    </li>
-
-                    <li>
-                        <a href="grid_options.htm"><i class="fa fa-laptop"></i> <span class="nav-label">Grid options</span></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-table"></i> <span class="nav-label">Tables</span><span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level collapse">
-                            <li><a href="table_basic.htm">Static Tables</a></li>
-                            <li><a href="table_data_tables.htm">Data Tables</a></li>
-                            <li><a href="table_foo_table.htm">Foo Tables</a></li>
-                            <li><a href="jq_grid.htm">jqGrid</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-shopping-cart"></i> <span class="nav-label">E-commerce</span><span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level collapse">
-                            <li><a href="ecommerce_products_grid.htm">Products grid</a></li>
-                            <li><a href="ecommerce_product_list.htm">Products list</a></li>
-                            <li><a href="ecommerce_product.htm">Product edit</a></li>
-                            <li><a href="ecommerce_product_detail.htm">Product detail</a></li>
-                            <li><a href="ecommerce-cart.htm">Cart</a></li>
-                            <li><a href="ecommerce-orders.htm">Orders</a></li>
-                            <li><a href="ecommerce_payments.htm">Credit Card form</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-picture-o"></i> <span class="nav-label">Gallery</span><span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level collapse">
-                            <li><a href="basic_gallery.htm">Lightbox Gallery</a></li>
-                            <li><a href="slick_carousel.htm">Slick Carousel</a></li>
-                            <li><a href="carousel.htm">Bootstrap Carousel</a></li>
-
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-sitemap"></i> <span class="nav-label">Menu Levels </span><span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level collapse">
-                            <li>
-                                <a href="#" id="damian">Third Level <span class="fa arrow"></span></a>
-                                <ul class="nav nav-third-level collapse">
-                                    <li>
-                                        <a href="#">Third Level Item</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Third Level Item</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Third Level Item</a>
-                                    </li>
-
-                                </ul>
-                            </li>
-                            <li><a href="#">Second Level Item</a></li>
-                            <li>
-                                <a href="#">Second Level Item</a></li>
-                            <li>
-                                <a href="#">Second Level Item</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="css_animation.htm"><i class="fa fa-magic"></i> <span class="nav-label">CSS Animations </span><span class="label label-info pull-right">62</span></a>
-                    </li>
-                    <li class="landing_link">
-                        <a target="_blank" href="landing.htm"><i class="fa fa-star"></i> <span class="nav-label">Landing Page</span> <span class="label label-warning pull-right">NEW</span></a>
-                    </li>
-                    <li class="special_link">
-                        <a href="package.htm"><i class="fa fa-database"></i> <span class="nav-label">Package</span></a>
-                    </li>
+                        <a href="QTLienHe.aspx"><i class="fa fa-edit"></i> <span class="nav-label">Liên Hệ</span></a>
+                    </li>     
                 </ul>
-
             </div>
         </nav>
-
         <div id="page-wrapper" class="gray-bg dashbard-1" style="min-height: 1199px;">
         <div class="row border-bottom">
         <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
         <div class="navbar-header">
-            <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+            <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#">
+                <i class="fa fa-bars"></i> 
+            </a>
             <form role="search" class="navbar-form-custom" action="search_results.html">
-                
+                <%-- To do something --%>
             </form>
         </div>
             <ul class="nav navbar-top-links navbar-right">
-                
-                
-                
-
-
                 <li>
-                    <a href="login.htm">
-                        <i class="fa fa-sign-out"></i> Log out
+                    <a href="DangXuat.aspx">
+                        <i class="fa fa-sign-out"></i> Đăng Xuất
                     </a>
-                </li>
-                
+                </li>               
             </ul>
-
         </nav>
         </div>
-                <div class="row  border-bottom white-bg dashboard-header">
-                    <asp:ContentPlaceHolder ID="QuanTriContent" runat="server"></asp:ContentPlaceHolder>
+            <div class="row  border-bottom white-bg dashboard-header" style="min-height:700px">
+                <asp:ContentPlaceHolder ID="QuanTriContent" runat="server"></asp:ContentPlaceHolder>
             </div>
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="wrapper wrapper-content">
-                        
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer">
+                        <div>
+                            <p class="m-t">Được thiết kế bởi nhóm lập trình web  <strong>VNPT Bến Tre </strong> &copy; 2017 </p>
+                        </div>
+                    </div>
                 </div>
-                
             </div>
         </div>
 
-        </div>
         <div class="small-chat-box fadeInRight animated">
-
             <div class="heading" draggable="true">
                 <small class="chat-date pull-right">
                     02.19.2015
                 </small>
                 Small chat
             </div>
-
-            <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 234px;"><div class="content" style="overflow: hidden; width: auto; height: 234px;">
-
-                <div class="left">
-                    <div class="author-name">
-                        Monica Jackson <small class="chat-date">
-                        10:02 am
-                    </small>
-                    </div>
-                    <div class="chat-message active">
-                        Lorem Ipsum is simply dummy text input.
-                    </div>
-
-                </div>
-                <div class="right">
-                    <div class="author-name">
-                        Mick Smith
-                        <small class="chat-date">
-                            11:24 am
+            <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 234px;">
+                <div class="content" style="overflow: hidden; width: auto; height: 234px;">
+                    <div class="left">
+                        <div class="author-name">
+                            Võ Nhựt Minh <small class="chat-date">
+                            10:02 am
                         </small>
-                    </div>
-                    <div class="chat-message">
-                        Lorem Ipsum is simpl.
-                    </div>
-                </div>
-                <div class="left">
-                    <div class="author-name">
-                        Alice Novak
-                        <small class="chat-date">
-                            08:45 pm
-                        </small>
-                    </div>
-                    <div class="chat-message active">
-                        Check this stock char.
-                    </div>
-                </div>
-                <div class="right">
-                    <div class="author-name">
-                        Anna Lamson
-                        <small class="chat-date">
-                            11:24 am
-                        </small>
-                    </div>
-                    <div class="chat-message">
-                        The standard chunk of Lorem Ipsum
-                    </div>
-                </div>
-                <div class="left">
-                    <div class="author-name">
-                        Mick Lane
-                        <small class="chat-date">
-                            08:45 pm
-                        </small>
-                    </div>
-                    <div class="chat-message active">
-                        I belive that. Lorem Ipsum is simply dummy text.
-                    </div>
-                </div>
+                        </div>
+                        <div class="chat-message active">
+                            Xin chào em yêu
+                        </div>
 
-
-            </div><div class="slimScrollBar" style="background: rgb(0, 0, 0); width: 7px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px;"></div><div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.4; z-index: 90; right: 1px;"></div></div>
+                    </div>
+                    <div class="right">
+                        <div class="author-name">
+                            Thư
+                            <small class="chat-date">
+                                11:24 am
+                            </small>
+                        </div>
+                        <div class="chat-message">
+                            Chào anh yêu
+                        </div>
+                    </div>
+                </div>
+                <div class="slimScrollBar" style="background: rgb(0, 0, 0); width: 7px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px;"></div>
+                <div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.4; z-index: 90; right: 1px;"></div>
+            </div>
             <div class="form-chat">
                 <div class="input-group input-group-sm">
                     <input type="text" class="form-control">
-                    <span class="input-group-btn"> <button class="btn btn-primary" type="button">Send
-                </button> </span></div>
+                    <span class="input-group-btn">
+                         <button class="btn btn-primary" type="button">Send</button> 
+                    </span>
+                </div>
             </div>
-
         </div>
         <div id="small-chat">
-
             <span class="badge badge-warning pull-right">5</span>
             <a class="open-small-chat">
                 <i class="fa fa-comments"></i>
-
             </a>
-        </div>
-        
+        </div>       
     </div>
-
+   
     <!-- Mainly scripts -->
     <script src="js\jquery-3.1.1.min.js"></script>
     <script src="js\bootstrap.min.js"></script>
@@ -440,7 +242,7 @@
                     showMethod: 'slideDown',
                     timeOut: 4000
                 };
-                toastr.success('Responsive Admin Theme', 'Welcome to INSPINIA');
+                toastr.success('Xin chào Thư Quê Hương');
 
             }, 1300);
 
