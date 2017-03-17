@@ -23,9 +23,9 @@
     <div class="middle-box text-center loginscreen animated fadeInDown">
         <div>
             <h3>Đăng nhập</h3>
-            <form class="m-t" role="form" action="Default.aspx" runat="server">
+            <form class="m-t" role="form" runat="server">
                 <div class="form-group">
-                    <input type="text" class="form-control" runat="server" id="inputTaiKhoan" placeholder="Tai khoản" required="">
+                    <input type="text" class="form-control" runat="server" id="inputTaiKhoan" placeholder="Tài khoản" required="">
                 </div>
                 <div class="form-group">
                     <input type="password" class="form-control" runat="server" id="inputMatKhau" placeholder="Mật khẩu" required="">

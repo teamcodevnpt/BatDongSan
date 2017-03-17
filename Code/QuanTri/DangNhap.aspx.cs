@@ -12,6 +12,7 @@ public partial class QuanTri_DangNhap : System.Web.UI.Page
     int gioiHanSoLanSai = 5;
     protected void Page_Load(object sender, EventArgs e)
     {
+        Session.Clear();
         if (Convert.ToInt32(txtSolanSai.Text.ToString()) < gioiHanSoLanSai)
         {
             divCaptcha.Attributes.Add("style", "display:none");
@@ -24,6 +25,6 @@ public partial class QuanTri_DangNhap : System.Web.UI.Page
 
     protected void btnDangNhap_Click(object sender, EventArgs e)
     {
-
+        Response.Redirect("Default");
     }
 }
