@@ -63,13 +63,11 @@
                     <li class="nav-header">
                         <div class="dropdown profile-element"> 
                             <span>
-                                <img alt="image" class="img-circle"style="width: 70px;height:70px" src="img\a6.jpg">
+                                <asp:Literal ID="ltrAvatar" runat="server"></asp:Literal>
                              </span>
                             <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                                 <span class="clear"> 
-                                    <span class="block m-t-xs"> 
-                                        <strong class="font-bold">Thư Quê Hương</strong>
-                                     </span> 
+                                    <asp:Literal ID="ltrTenNguoiDung" runat="server"></asp:Literal>
                                      <span class="text-muted text-xs block">Admin
                                           <b class="caret"></b>
                                      </span> 
@@ -242,7 +240,7 @@
                     showMethod: 'slideDown',
                     timeOut: 4000
                 };
-                toastr.success('Xin chào Thư Quê Hương');
+                toastr.success('Xin chào Thư');
 
             }, 1300);
 

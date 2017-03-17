@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="DangNhap.aspx.cs" Inherits="QuanTri_DangNhap" %>
+
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -6,7 +8,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Đăng nhập Quản Trị</title>
+    <title>Đăng nhập</title>
 
     <link href="css\bootstrap.min.css" rel="stylesheet">
     <link href="font-awesome\css\font-awesome.css" rel="stylesheet">
@@ -20,21 +22,29 @@
 
     <div class="middle-box text-center loginscreen animated fadeInDown">
         <div>
-            <h3>Welcome to BDS</h3>
-            <form class="m-t" role="form" action="Default.aspx">
+            <h3>Đăng nhập</h3>
+            <form class="m-t" role="form" action="Default.aspx" runat="server">
                 <div class="form-group">
                     <input type="text" class="form-control" runat="server" id="inputTaiKhoan" placeholder="Tai khoản" required="">
                 </div>
                 <div class="form-group">
                     <input type="password" class="form-control" runat="server" id="inputMatKhau" placeholder="Mật khẩu" required="">
                 </div>
-                <button type="submit" class="btn btn-primary block full-width m-b" runat="server" id="btnDangNhap" onclick="btnDangNhap_Click">Đăng nhập</button>
-
+                <asp:TextBox ID="txtSolanSai" runat="server" Text="0" CssClass="form-control" Visible="false"></asp:TextBox>
+                 <div class="form-group" id="divCaptcha" runat="server">  
+                    <div class ="col-md-6 col-xs-12">
+                        <input type="text" id="txtCaptcha" runat="server" class="form-control" placeholder="Captcha"/>
+                    </div>
+                    <div class ="col-md-6 col-xs-12">
+                         <img id="imgCaptcha" src="Captcha.aspx" alt="Captcha image" runat="server" style="width:100%"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <asp:Button ID="btnDangNhap" class="btn btn-primary block full-width m-b" runat="server" Text="Đăng Nhập" OnClick="btnDangNhap_Click"/> 
+                </div>
                 <a href="#"><small>Quên Mật Khẩu?</small></a>
-                <%--<p class="text-muted text-center"><small>Do not have an account?</small></p>--%>
-                <%--<a class="btn btn-sm btn-white btn-block" href="register.htm">Create an account</a>--%>
             </form>
-            <p class="m-t"> <small>Được thiết kế bởi nhóm lập trình web VNPT Bến Tre &copy; 2017</small> </p>
+            <p class="m-t"> <small>Được thiết kế bởi nhóm lập trình web <strong>VNPT Bến Tre</strong> &copy; 2017</small> </p>
         </div>
     </div>
 

@@ -15,8 +15,12 @@ public partial class QuanTri_QuanTri : System.Web.UI.MasterPage
         //}
         //else
         //{
-        //    lblTenNguoiDung.Text = Session["HoTen"].ToString();
-        //    ltrAvatar.Text = "<img src='" + Session["Avatar"].ToString() + "'/>";
+            // đang hardcode
+            //ltrTenNguoiDung.Text = Session["HoTen"].ToString();
+            ltrTenNguoiDung.Text = "<span class='block m-t-xs'> "+
+                                        "<strong class='font-bold'>Thư</strong>"+
+                                    "</span>";
+            ltrAvatar.Text = "<img alt='image' class='img-circle'style='width: 70px;height:70px' src='img/a6.jpg'/>";
         //}
     }
 
