@@ -1,20 +1,68 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="TrangChu.master.cs" Inherits="Site" %>
 
+<%@ Register Src="~/Modules/MBanner.ascx" TagPrefix="uc1" TagName="MBanner" %>
+<%@ Register Src="~/Modules/MMenuNgang.ascx" TagPrefix="uc1" TagName="MMenuNgang" %>
+<%@ Register Src="~/Modules/MSlideShowChinh.ascx" TagPrefix="uc1" TagName="MSlideShowChinh" %>
+<%@ Register Src="~/Modules/MBatDongSanNoiBat.ascx" TagPrefix="uc1" TagName="MBatDongSanNoiBat" %>
+<%@ Register Src="~/Modules/MLeftContent.ascx" TagPrefix="uc1" TagName="MLeftContent" %>
+<%@ Register Src="~/Modules/MFooter.ascx" TagPrefix="uc1" TagName="MFooter" %>
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-    <asp:ContentPlaceHolder id="head" runat="server">
-    </asp:ContentPlaceHolder>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="<%=ResolveUrl("~/css/responsiveslides.css")%>" rel="stylesheet" />
+    <link href="<%=ResolveUrl("~/css/demo/demo_responsiveslides.css") %>" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="<%=ResolveUrl("~/css/responsiveslides.min.js") %>"></script>
+    <script src="<%=ResolveUrl("~/scripts/bootstrap.min.js")%>"></script>
+
+    <link href="<%=ResolveUrl("~/css/owl/owl.carousel.css")%>" rel="stylesheet" />
+    <script src="<%=ResolveUrl("~/css/owl/owl.carousel.js") %>"></script>
+    <script src="<%=ResolveUrl("~/css/owl/owl.carousel.min.js") %>"></script>
+    <link href="<%=ResolveUrl("~/css/owl/owl.theme.css") %>" rel="stylesheet" />
+    <link href="<%=ResolveUrl("~/css/owl/owl.transitions.css") %>" rel="stylesheet" />
+
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" />
 </head>
-<body>
-    <form id="form1" runat="server">
-    <div>
-        <asp:ContentPlaceHolder id="MainContent" runat="server">
-        
-        </asp:ContentPlaceHolder>
+<body style="background-image:url(../Images/bg-body.jpg)">
+    <div class="container">
+        <div class="row">
+            <uc1:MBanner runat="server" id="MBanner" />
+        </div>
+        <div class="row">
+            <uc1:MMenuNgang runat="server" ID="MMenuNgang" />
+        </div>
+        <div class="row">
+            <div class="col-md-12" style="padding: 0px;">
+                <uc1:MSlideShowChinh runat="server" ID="MSlideShowChinh" />
+                <uc1:MBatDongSanNoiBat runat="server" ID="MBatDongSanNoiBat" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12" style="padding: 0px;">
+                <div class="col-md-3 col-md-12" style="padding:0px;">
+                    <uc1:MLeftContent runat="server" ID="MLeftContent1" />
+                </div>
+                <div class="col-md-9 col-md-12" style="padding:0px;">
+                    <asp:ContentPlaceHolder id="MainContent" runat="server">
+                        
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+        </div> 
+        <uc1:MFooter runat="server" ID="MFooter" />     
     </div>
-    </form>
+    <script lang="javascript">(function() {var pname = ( (document.title !='')? document.title : document.querySelector('meta[property="og:title"]').getAttribute('content') );var ga = document.createElement('script'); ga.type = 'text/javascript';ga.src = '//live.vnpgroup.net/js/web_client_box.php?hash=6b0af800d75cae94fd189acf925d7a79&data=eyJzc29faWQiOjE0MzQ0ODksImhhc2giOiIzMWRhYjI0N2YxZGRjMzUxNGQzOWQwNTJjZjk5ZjAxZiJ9&pname='+pname;var s = document.getElementsByTagName('script');s[0].parentNode.insertBefore(ga, s[0]);})();</script>
 </body>
 </html>
