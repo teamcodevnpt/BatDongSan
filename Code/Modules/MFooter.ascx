@@ -12,33 +12,27 @@
     /* Custom footer CSS
     -------------------------------------------------- */
 </style>
-    <div class="row" style="padding:10px 10px 15px 15px;background-color:#0067a2;">
+    <div class="row" style="padding:10px 10px 15px 15px;background-color:#2196f3;">
         <div class="col-md-12" style="padding:10px 10px 15px 15px;">
             <div class="col-md-4">
             <center>
-                <img src="http://oi60.tinypic.com/w8lycl.jpg" class="img-circle" alt="the-brains">
-                <br>
-                <h4 class="footertext">Programmer</h4>
-                <p class="footertext">You can thank all the crazy programming here to this guy.<br>
+                <h4>FOOTER</h4>
             </center>
         </div>
         <div class="col-md-4">
             <center>
-                <img src="http://oi60.tinypic.com/2z7enpc.jpg" class="img-circle" alt="...">
-                <br>
-                <h4 class="footertext">Artist</h4>
-                <p class="footertext">All the images here are hand drawn by this man.<br>
+                <h4>FOOTER</h4>
             </center>
         </div>
-        <div class="col-md-4" style="padding-right: 0px;">
+        <div class="col-md-4">
             <center>
-                <img src="http://oi61.tinypic.com/307n6ux.jpg" class="img-circle" alt="...">
-                <br>
-                <h4 class="footertext">Designer</h4>
-                <p class="footertext">This pretty site and the copy it holds are all thanks to this guy.<br>
+                <h4>FOOTER</h4>
             </center>
         </div>
         </div>
-
-        <p><center><a href="#">Contact Stuff Here</a> <p class="footertext">Copyright 2014</p></center></p>
+        <p>
+            <center>
+                <p class="m-t"> <small>Được thiết kế bởi nhóm lập trình web <strong>VNPT Bến Tre</strong> &copy; 2017</small> </p>
+            </center>
+        </p>
             </div>

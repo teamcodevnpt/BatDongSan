@@ -9,7 +9,7 @@
 
 
 <div class="panel panel-primary">
-    <div class="panel-heading" style="text-align: center; font-weight: bold">Tìm kiếm</div>
+    <div class="panel-heading" style="text-align: center; font-weight: bold">Tìm kiếm cơ bản</div>
     <div class="panel-body">
         <uc1:MTimKiemCoBan runat="server" ID="MTimKiemCoBan" />
     </div>

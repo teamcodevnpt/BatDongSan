@@ -93,11 +93,14 @@
                     <li>
                         <a href="QTMenu"><i class="fa fa-edit"></i> <span class="nav-label">Menu</span></a>
                     </li>
-                     <li>
+                    <li>
                         <a href="QTSlideShow"><i class="fa fa-edit"></i> <span class="nav-label">Slide Show</span></a>
                     </li>
                     <li>
                         <a href="QTLienHe"><i class="fa fa-edit"></i> <span class="nav-label">Liên Hệ</span></a>
+                    </li>  
+                    <li>
+                        <a href="QTBanner"><i class="fa fa-edit"></i> <span class="nav-label">Banner</span></a>
                     </li>     
                 </ul>
             </div>
@@ -216,9 +219,7 @@
 
             $('.footable').footable();
             $('.footable2').footable();
-
         });
-
     </script>
 
 </body>

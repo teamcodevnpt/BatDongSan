@@ -54,7 +54,7 @@
                 <div class="col-md-3 col-md-12" style="padding:0px;">
                     <uc1:MLeftContent runat="server" ID="MLeftContent1" />
                 </div>
-                <div class="col-md-9 col-md-12" style="padding:0px;">
+                <div class="col-md-9 col-md-12" style="padding:0px 0px 5px 5px">
                     <asp:ContentPlaceHolder id="MainContent" runat="server">
                         
                     </asp:ContentPlaceHolder>
@@ -63,6 +63,6 @@
         </div> 
         <uc1:MFooter runat="server" ID="MFooter" />     
     </div>
-    <script lang="javascript">(function() {var pname = ( (document.title !='')? document.title : document.querySelector('meta[property="og:title"]').getAttribute('content') );var ga = document.createElement('script'); ga.type = 'text/javascript';ga.src = '//live.vnpgroup.net/js/web_client_box.php?hash=6b0af800d75cae94fd189acf925d7a79&data=eyJzc29faWQiOjE0MzQ0ODksImhhc2giOiIzMWRhYjI0N2YxZGRjMzUxNGQzOWQwNTJjZjk5ZjAxZiJ9&pname='+pname;var s = document.getElementsByTagName('script');s[0].parentNode.insertBefore(ga, s[0]);})();</script>
+    <script lang="javascript">(function () { var pname = ((document.title != '') ? document.title : document.querySelector('h1').innerHTML); var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = 1; ga.src = '//live.vnpgroup.net/js/web_client_box.php?hash=e9b3c06e726dd5e9976f2b860c21c07b&data=eyJzc29faWQiOjQ2Mzc4NjYsImhhc2giOiIwMjQ3ZjVlNTg5MDEwOTU2ZGE4ODU5OGViNDY3ZTFhOCJ9&pname=' + pname; var s = document.getElementsByTagName('script'); s[0].parentNode.insertBefore(ga, s[0]); })();</script>	
 </body>
 </html>

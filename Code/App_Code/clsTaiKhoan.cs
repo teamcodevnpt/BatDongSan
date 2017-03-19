@@ -71,6 +71,10 @@ public class clsTaiKhoan
         return Convert.ToInt32(para[8].Value);
 
     }
+    public DataTable select_hotro_tructuyen()
+    {
+        return myConn.Stored_ExecuteQuery_Datatable_noPara("select_hotro_tructuyen");
+    }
     public byte[] encryptData(string data)
     {
         System.Security.Cryptography.MD5CryptoServiceProvider md5Hasher = new System.Security.Cryptography.MD5CryptoServiceProvider();

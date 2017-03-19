@@ -11,4 +11,8 @@ public partial class Modules_MTimKiemCoBan : System.Web.UI.UserControl
     {
 
     }
+    protected void btnSearch_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("~/Pages/DanhSachBatDongSan?search=" + txtTenBatDongSan.Value);
+    }
 }

@@ -167,47 +167,8 @@
             <div style="position:absolute;display:block;background:url('../Images/ImgSlideShow/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
         </div>
         <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:600px;height:300px;overflow:hidden;">
-            <div>
-                <img data-u="image" src="../Images/ImgSlideShow/002.jpg" />
-                <div data-u="thumb">
-                    <img class="i" src="../Images/ImgSlideShow/thumb-002.jpg" />
-                    <div class="t">Banner Rotator</div>
-                    <div class="c">360+ touch swipe slideshow effects</div>
-                </div>
-            </div>
-            <div>
-                <img data-u="image" src="../Images/ImgSlideShow/003.jpg" />
-                <div data-u="thumb">
-                    <img class="i" src="../Images/ImgSlideShow/thumb-003.jpg" />
-                    <div class="t">Image Gallery</div>
-                    <div class="c">Image gallery with thumbnail navigation</div>
-                </div>
-            </div>
             <a data-u="any" href="http://www.jssor.com" style="display:none">List Slider</a>
-            <div>
-                <img data-u="image" src="../Images/ImgSlideShow/004.jpg" />
-                <div data-u="thumb">
-                    <img class="i" src="../Images/ImgSlideShow/thumb-004.jpg" />
-                    <div class="t">Carousel</div>
-                    <div class="c">Touch swipe, mobile device optimized</div>
-                </div>
-            </div>
-            <div>
-                <img data-u="image" src="../Images/ImgSlideShow/005.jpg" />
-                <div data-u="thumb">
-                    <img class="i" src="../Images/ImgSlideShow/thumb-005.jpg" />
-                    <div class="t">Themes</div>
-                    <div class="c">30+ professional themems + growing</div>
-                </div>
-            </div>
-            <div>
-                <img data-u="image" src="../Images/ImgSlideShow/006.jpg" />
-                <div data-u="thumb">
-                    <img class="i" src="../Images/ImgSlideShow/thumb-006.jpg" />
-                    <div class="t">Tab Slider</div>
-                    <div class="c">Tab slider with auto play options</div>
-                </div>
-            </div>
+            <asp:Literal ID="ltrSlideShowChinh" runat="server"></asp:Literal>
         </div>
         <!-- Thumbnail Navigator -->
         <div data-u="thumbnavigator" class="jssort11" style="position:absolute;right:5px;top:0px;font-family:Arial, Helvetica, sans-serif;-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none;width:200px;height:300px;" data-autocenter="2">
