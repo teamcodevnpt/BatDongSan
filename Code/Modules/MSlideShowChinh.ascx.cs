@@ -22,7 +22,7 @@ public partial class Modules_MSlideShowChinh : System.Web.UI.UserControl
             for(int i = 0; i < dt_BDS.Rows.Count; i++)
             {
                 ltrSlideShowChinh.Text += "<div>";
-                ltrSlideShowChinh.Text += "<img data-u='image' src=" + dt_BDS.Rows[i]["AVATAR"].ToString() + " />";
+                ltrSlideShowChinh.Text += "<a href='../Pages/TimKiemChiTiet'><img data-u='image' src=" + dt_BDS.Rows[i]["AVATAR"].ToString() + " /></a>";
                 ltrSlideShowChinh.Text += "<div data-u='thumb'>";
                 ltrSlideShowChinh.Text += "<img class='i' src='" + dt_BDS.Rows[i]["AVATAR"].ToString() + "' />";
                 ltrSlideShowChinh.Text += "<div class='t'>" + dt_BDS.Rows[i]["TIEU_DE"].ToString() + "</div>";

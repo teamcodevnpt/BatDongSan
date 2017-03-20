@@ -144,7 +144,7 @@
                 <small class="chat-date pull-right">
                     02.19.2015
                 </small>
-                Small chat
+                Chat
             </div>
             <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 234px;">
                 <div class="content" style="overflow: hidden; width: auto; height: 234px;">
@@ -170,6 +170,16 @@
                             Chào anh yêu
                         </div>
                     </div>
+					<div class="right">
+						<div class="chat-message">
+                            Anh ăn gì chưa?
+                        </div>
+					</div>
+					<div class="right">
+						<div class="chat-message">
+                           Sao không trả lời em?
+                        </div>
+					</div>
                 </div>
                 <div class="slimScrollBar" style="background: rgb(0, 0, 0); width: 7px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px;"></div>
                 <div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.4; z-index: 90; right: 1px;"></div>
